@@ -1,0 +1,316 @@
+@font-face {
+  font-family: cabin-bold;
+  src: url(../fonts/Cabin-Bold.ttf);
+}
+
+@font-face {
+  font-family: BalooDa2-Regular;
+  src: url(../fonts/BalooDa2-Regular.ttf);
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  resize: none;
+  font-family: BalooDa2-Regular;
+}
+
+body {
+  min-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  font-family: cabin-bold;
+}
+
+input {
+  font-family: BalooDa2-Regular;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 75px;
+  background-color: #f0f0f0;
+  -webkit-box-shadow: 0 0 4px 4px rgba(78, 77, 77, 0.356);
+          box-shadow: 0 0 4px 4px rgba(78, 77, 77, 0.356);
+  background: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__title {
+  color: #d9d9d9;
+  letter-spacing: 0.03em;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.censor {
+  margin: 6em auto 0;
+}
+
+.censor__content {
+  width: 750px;
+  background-color: #f3f3f3;
+  border-radius: 0.4em;
+  padding: 0.6em;
+  margin: 0 auto;
+}
+
+.censor__bad-words-str-block {
+  margin-bottom: 0.6em;
+}
+
+.censor__bad-words-str-block span {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  word-spacing: 0.1em;
+}
+
+.censor__bad-words-str {
+  color: #e61616;
+  font-family: BalooDa2-Regular;
+}
+
+.censor__input-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.censor__input {
+  width: 75%;
+  padding: 0.6em 0.8em;
+  border-radius: 0.2em;
+  font-size: 1rem;
+  -webkit-box-shadow: 0 0 0 1.5px #d6d6d6;
+          box-shadow: 0 0 0 1.5px #d6d6d6;
+}
+
+.censor__input--warning {
+  -webkit-box-shadow: 0 0 0 2px #e71313;
+          box-shadow: 0 0 0 2px #e71313;
+}
+
+.censor__input--warning::-webkit-input-placeholder {
+  color: #e71313;
+}
+
+.censor__input--warning:-ms-input-placeholder {
+  color: #e71313;
+}
+
+.censor__input--warning::-ms-input-placeholder {
+  color: #e71313;
+}
+
+.censor__input--warning::placeholder {
+  color: #e71313;
+}
+
+.censor__btn {
+  font-size: 1rem;
+  padding: 0.6em 0;
+  border-radius: 0.2em;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  -webkit-transition: background-color 0.3s ease-in;
+  transition: background-color 0.3s ease-in;
+}
+
+.censor__btn--add {
+  width: 11%;
+  color: #212121;
+  background-color: #fcdc2a;
+}
+
+.censor__btn--add:hover {
+  background-color: #f0d32f;
+}
+
+.censor__btn--add:focus {
+  -webkit-box-shadow: 0 0 0 1px #fce14d, 0 0 0 3px #fde454a6;
+          box-shadow: 0 0 0 1px #fce14d, 0 0 0 3px #fde454a6;
+}
+
+.censor__btn--reset {
+  width: 11%;
+  color: #ffffff;
+  background-color: #cc4928;
+}
+
+.censor__btn--reset:hover {
+  background-color: #b8492e;
+}
+
+.censor__btn--reset:focus {
+  -webkit-box-shadow: 0 0 0 1px #dd5b3a, 0 0 0 3px #cc4928a4;
+          box-shadow: 0 0 0 1px #dd5b3a, 0 0 0 3px #cc4928a4;
+}
+
+.censor__btn--censor {
+  width: 100%;
+  color: #ffffff;
+  background-color: #23a844;
+}
+
+.censor__btn--censor:hover {
+  background-color: #289744;
+}
+
+.censor__btn--censor:focus {
+  -webkit-box-shadow: 0 0 0 1px #47c266, 0 0 0 3px #23a84473;
+          box-shadow: 0 0 0 1px #47c266, 0 0 0 3px #23a84473;
+}
+
+.censor__text-block {
+  margin: 1.1em 0 0;
+}
+
+.censor__text {
+  margin-bottom: 0.6em;
+  padding: 0.6em 0.8em;
+  border-radius: 0.2em;
+  font-size: 1rem;
+  width: 100%;
+  height: 110px;
+  -webkit-box-shadow: 0 0 0 1.5px #d6d6d6;
+          box-shadow: 0 0 0 1.5px #d6d6d6;
+}
+
+.censor__text--warning {
+  -webkit-box-shadow: 0 0 0 2px #e71313;
+          box-shadow: 0 0 0 2px #e71313;
+}
+
+.censor__text--warning::-webkit-input-placeholder {
+  color: #e71313;
+}
+
+.censor__text--warning:-ms-input-placeholder {
+  color: #e71313;
+}
+
+.censor__text--warning::-ms-input-placeholder {
+  color: #e71313;
+}
+
+.censor__text--warning::placeholder {
+  color: #e71313;
+}
+
+.censor__text--good {
+  -webkit-box-shadow: 0 0 0 2px #14a114;
+          box-shadow: 0 0 0 2px #14a114;
+}
+
+.focus:focus {
+  -webkit-box-shadow: 0 0 0 1.5px #2a5eee, 0 0 0 4px rgba(63, 146, 255, 0.548);
+          box-shadow: 0 0 0 1.5px #2a5eee, 0 0 0 4px rgba(63, 146, 255, 0.548);
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    padding: 0 2em;
+  }
+  .censor {
+    margin: 3em auto 0;
+  }
+  .censor__content {
+    width: 90%;
+  }
+  .censor__input-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .censor__input {
+    width: 100%;
+  }
+  .censor__btn--add {
+    width: 49%;
+    margin-top: 0.4em;
+  }
+  .censor__btn--reset {
+    width: 49%;
+    margin-top: 0.4em;
+  }
+  .censor__text-block {
+    margin: 0.7em 0 0;
+  }
+  .censor__text {
+    margin-bottom: 0.1em;
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    height: 70px;
+  }
+  .header__title {
+    font-size: 1.6rem;
+  }
+  .container {
+    padding: 0 1em;
+  }
+  .censor {
+    margin: 3em auto 0;
+  }
+  .censor__content {
+    width: 95%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Censor</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__title-wrapper">
+                    <h1 class="header__title">List of prohibited words:</h1>
+                </div>
+            </div>
+        </header>
+        <main class="censor">
+            <div class="censor__container container">
+                <div class="censor__content">
+                    <form action="" class="censor__form">
+                        <div class="censor__bad-words-block">
+                            <div class="censor__bad-words-str-block">
+                                <span>Bad words: </span>
+                                <span class="censor__bad-words-str"></span>
+                            </div>
+                            <div class="censor__input-block">
+                                <input type="text" name="" class="censor__input focus" placeholder="word here...">
+                                <input type="button" value="Add" class="censor__btn censor__btn--add">
+                                <input type="button" value="Reset" class="censor__btn censor__btn--reset">
+                            </div>
+                            <div class="censor__text-block">
+                                <textarea name="" class="censor__text focus" placeholder="text here..."></textarea>
+                                <input type="button" value="Censor" class="censor__btn censor__btn--censor">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
